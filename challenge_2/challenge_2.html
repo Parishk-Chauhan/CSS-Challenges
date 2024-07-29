@@ -1,0 +1,42 @@
+<!-- *************************Challenge 2************************* -->
+
+
+<!-- Requirements : Expanding Bar Search 
+ search inputs : takes upto 1/3 of the width of its container
+
+ When the user click on the search bar : 
+
+    1. input grows to entire width of its parent container with smooth transition 
+    2. shrinks back to original size when user clicks away 
+    3. blue border
+    4. placehlder text is not visible when user clicks inside the search bar 
+
+Accessibility : 
+
+    1. For accessibility, form inputs should have a label. Create a lable with a valid valid for attribute 
+    2. Look for some CSS rule that hide the search input's label virtually but keeps it accessible to screen readers 
+
+Use a transition to make sure that the search bar expands smoothly 
+
+research : 1. The :focus pseudo selector 
+           2. A pseudo selector that lets you change placeholder styles  
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="challenge_2.css">
+    <title>Expanding Bar Search</title>
+</head>
+<body>
+    <div class="container">
+        <label for="search-field" class="hide">Search</label>
+        <input type="search" class="search-bar" id="search-field" placeholder="Search..."/>
+    </div>
+    
+</body>
+</html>
