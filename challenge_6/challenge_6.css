@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* To center the board and the rings according to their parents*/
+.container, .ring {
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to create the outer most ring  */
+.outer {
+    height: 26.1em;
+    width: 26.1em;
+    background: black;
+    border-radius: 50%;
+    
+}
+/* to create the blue ring  */
+.blue {
+    height: 20.1em;
+    width: 20.1em;
+    background: blue;
+    border-radius: 50%;
+}
+
+/* to crete the red ring  */
+
+.red {
+    height: 14.1em;
+    width: 14.1em;
+    background: red;
+    border-radius: 50%;
+}
+
+/* to crete the inner ring  */
+
+.inner {
+    height: 8.1em;
+    width: 8.1em;
+    background: yellow;
+    border-radius: 50%;
+}
