@@ -1,0 +1,50 @@
+html, body {
+    margin : 0;
+    padding : 0;
+}
+    
+:root {
+    --bg-word : #5134ff;
+}
+
+/* to center the carasoul */
+    
+.container { 
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* for targetting animation on text after I Love */
+h1:after {
+    content: "";
+    animation: swap infinite 6s;
+    background: var(--bg-word);
+    padding: 10px;
+    color: white;
+    border-radius : 4px;
+    margin-left: 4px;
+}
+    /* changing words using animation  */
+@keyframes swap {
+    
+    0% {
+    content : "cricket";
+    }
+    
+    25% {
+    content : "coding";
+    }
+    
+    50% {
+    content : "music";
+    }
+    
+    75% {
+    content : "comics";
+    }
+    
+    100% {
+    content : "cricket";
+    }               /* for smooth transition*/
+}
