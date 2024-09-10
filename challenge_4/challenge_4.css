@@ -1,0 +1,46 @@
+:root {
+    --color-light : lightgray;
+    --color-dark: darkgray;
+}
+
+html, body {
+    margin : 0;
+    padding : 0;
+}
+
+.circle {
+    height : 1.5em;
+    width: 1.5em;
+    background : #000;
+    margin : .5em;
+    border-radius: 50%;
+    animation: pulse infinite alternate 1s; 
+}
+
+.container {
+    display : flex;             /*cause we want them in a line*/
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pulse {
+    from {
+            background: var(--color-dark);
+    }
+
+    to {
+            background: var(--color-light);
+            height: 1.6em;
+            width : 1.6em;
+    }
+}
+
+@keyframes identifier {
+    from {
+
+    }
+    to {
+
+    }
+}
