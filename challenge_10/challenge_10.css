@@ -1,0 +1,42 @@
+html, body {
+    padding : 0px;
+    margin : 0px;
+    background: gray;
+}
+
+:root {
+    --white : #FFFFFF;
+    --red : #FC3E32;
+    --green : #007E39;
+    --flag-height : 150px;
+}
+
+.container {
+    height : var(--flag-height);
+    width: calc(var(--flag-height) * 3/2);
+    display: flex;
+    margin : 30px auto;
+}
+
+.red_green {
+    height: var(--flag-height);
+    width : calc(var(--flag-height) / 2);
+}
+
+.red {
+    height: calc(var(--flag-height) /2);
+    width : var(--flag-height);
+    background: var(--red);
+}
+
+.green {
+    height: calc(var(--flag-height)/2);
+    width : var(--flag-height);
+    background: var(--green);
+}
+
+.white {
+    height: var(--flag-height);
+    width : calc(var(--flag-height) / 2);
+    background: var(--white);
+}
