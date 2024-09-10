@@ -1,0 +1,45 @@
+tml, body {
+    margin : 0;
+    padding : 0;
+}
+
+.square {
+    height : 1.5em;
+    width: 1.5em;
+    background: black;
+    margin: .5em;
+    animation: rotate infinite 1.5s;
+
+}
+
+.square1{
+    background: red;
+}
+
+.square2{
+    background: orange;
+}
+
+.square3{
+    background: blue;
+}
+
+/* center the squares */
+
+.container  {
+    display: flex;             /* all squares are in one line now*/
+    justify-content: center;          /* center vertically */
+    height: 100vh;               /* to use align - items properthy */
+    align-items: center;           /*center horizantly*/
+}
+
+@keyframes rotate {
+    from {
+            transform: rotate(-45deg);
+    }
+
+    to {
+            transform: rotate(45deg);
+    }
+    
+}
