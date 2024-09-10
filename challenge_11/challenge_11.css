@@ -1,0 +1,39 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height : 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --white: #fff;
+    --red : #ff0002;
+    --flag-hw : 100px;
+}
+
+.container {
+    width : var(--flag-hw);
+    height : var(--flag-hw);
+    background: var(--red);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.plus {
+    background: var(--white); 
+    position: absolute;        /* needed to have plus sign othermise i will be a flatened T*/
+}
+
+.vertical {
+    height : calc(var(--flag-hw) * 5/8);
+    width : calc(var(--flag-hw) * 3/16);
+}
+
+.horizontal {
+    height : calc(var(--flag-hw) * 3/16);
+    width : calc(var(--flag-hw) * 5/8);
+}
