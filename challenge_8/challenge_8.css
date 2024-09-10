@@ -1,0 +1,33 @@
+:root {
+    --red : #ED2938;
+    --white: #FFF;
+    --blue : #002495;
+}
+
+body {
+    background: gray;
+}
+
+/* To get the stripes in a row and center them */
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.stripes{
+    height : 300px;
+    width : 200px;
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.white {
+    background: var(--white);
+}
+
+.red {
+    background: var(--red);
+}
